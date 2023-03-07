@@ -2,8 +2,31 @@
 This project has been written in java and maven. Please use maven commands to test it
 #Setup and Tests steps
 Git clone the repository
+Install the maven plugin 
 Run the tests using #mvn test
 The reports will be generated under OpenWeatherAPI/reports containing json,html and xml formats
+
+TEST RESULTS 
+4 Scenarios (1 failed, 3 passed)
+
+DEFECT TO BE RAISED:
+As per requirement the error response should be 
+
+EXPECTED
+
+{
+"code": 401,
+"message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."
+}
+
+ACTUAL
+
+{
+    "cod": 401,
+    "message": "Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+}
+
+"Cod" instead of "code"
 
 
 #Answers to the Questions
