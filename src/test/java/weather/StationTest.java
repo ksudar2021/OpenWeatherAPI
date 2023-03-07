@@ -35,7 +35,7 @@ public class StationTest {
                 .log()
                 .all()
                 .statusCode(401)
-                .body("cod",is(401))
+                .body("code",is(401))
                 .body("message",is("Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."));
     }
 
